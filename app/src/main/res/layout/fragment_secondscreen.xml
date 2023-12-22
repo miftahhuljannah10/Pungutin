@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onboarding.screen.SecondScreenFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="264dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="180dp"
+        android:src="@drawable/secondscreen_onboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFeatureSettings="tnum, lnum"
+        android:gravity="center_horizontal|top"
+        android:textSize="28sp"
+        android:layout_marginTop="25dp"
+        android:lineSpacingExtra="4sp"
+        android:textStyle="bold"
+        android:text="Nikmati kemudahan\nAyok Pungutin"
+        android:translationY="-1.5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="320dp" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="3dp"
+        android:text="Anda bingung sampah menumpuk semakin banyak? Dengan menggunakan aplikasi Pungutin, kami akan melayani anda saat kapan pun dibutuhkan"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textWelcome"
+        />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="104dp"
+        android:layout_height="51dp"
+
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="56dp"
+        android:backgroundTint="@color/green_primary"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
